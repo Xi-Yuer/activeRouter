@@ -1,0 +1,51 @@
+{
+  "id": "3520825",
+  "name": "动态路由",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7964491",
+      "name": "班级管理",
+      "font_class": "banjiguanli",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "26237548",
+      "name": "信息、语音信息、提示信息-04",
+      "font_class": "a-xinxiyuyinxinxitishixinxi-04",
+      "unicode": "e914",
+      "unicode_decimal": 59668
+    },
+    {
+      "icon_id": "248953",
+      "name": "delete",
+      "font_class": "delete",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "1304889",
+      "name": "添加",
+      "font_class": "tianjia",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "15838510",
+      "name": "operation",
+      "font_class": "operation",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "15838535",
+      "name": "setting",
+      "font_class": "setting",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    }
+  ]
+}
