@@ -46,10 +46,16 @@ function generateRouter(userRoutes) {
     let routes = {
       path: r.path,
       name: r.name,
+      meta: {
+        title: r.title,
+      },
       component:
         r.pid === 0
           ? ''
-          : () => import(/* @vite-ignore */ `../../views/main-pages${r.path}/index.vue`),
+          : () =>
+              import(
+                /* @vite-ignore */ `../../views/main-pages${r.path}/index.vue`
+              ),
     }
     if (r.children) {
       routes.children = generateRouter(r.children)

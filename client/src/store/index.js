@@ -8,33 +8,30 @@ const useStore = defineStore({
     return {
       uid: 1,
       userRoutes: [],
+      breadCrumb: [],
+      breadCrumbIsFold: false,
     }
   },
   actions: {
     async changeUserRoutes() {
       // 根据用户输入获取用户路由权限
       const userRoutes = await getUserRoutes(this.uid)
+      window.localStorage.setItem('UserRoutes', JSON.stringify(userRoutes))
       // 将用户权限对应的路由格式化为路由树形结构
       const formatUserRoutesResult = formatRouterTree(userRoutes)
       this.userRoutes = formatUserRoutesResult
       // 注册路由
-      // console.log(generateRouter(this.userRoutes))
       generateRouter(this.userRoutes).map(route => {
-        console.log(route)
         router.addRoute('Index', route)
       })
-      // console.log(router.getRoutes())
     },
-  },
-  persist: {
-    enabled: true,
-    strategies: [
-      {
-        key: 'userRoutes',
-        storage: localStorage,
-      },
-    ],
-  },
+    changeBreadCrumb(breadCrumb) {
+      this.breadCrumb = breadCrumb
+    },
+    changeBreadCrumbIsFold(isFold) {
+      this.breadCrumbIsFold = isFold
+    }
+  }
 })
 
 export { useStore }

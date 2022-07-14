@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { useStore } from '@/store'
 
 // 创建路由
 const router = createRouter({
@@ -12,8 +13,8 @@ const router = createRouter({
     },
     {
       path: '/login',
-      name: 'Login' ,
-      component: () => import('@/views/login/index.vue')
+      name: 'Login',
+      component: () => import('@/views/login/index.vue'),
     },
     {
       path: '/:pathMatch(.*)*',
@@ -21,6 +22,16 @@ const router = createRouter({
       component: () => import('../views/not-found/index.vue'),
     },
   ],
+})
+// 初始化路由数据
+let hasRoute = false
+router.beforeEach(async to => {
+  if (!hasRoute) {
+    await useStore().changeUserRoutes()
+    hasRoute = true
+    return { ...to, replace: true }
+  }
+  return true
 })
 
 export default router
