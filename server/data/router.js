@@ -1,6 +1,6 @@
 module.exports = [
   {
-    id: 2,
+    id: 1,
     pid: 0, // 0表示顶级菜单
     path: '/course',
     name: 'Curriculum',
@@ -8,90 +8,124 @@ module.exports = [
     icon: 'icon-setting',
   },
   {
+    id: 2,
+    pid: 1, // 0表示顶级菜单
+    path: '/course/add',
+    name: 'addCourse',
+    title: '添加课程',
+    icon: 'icon-tianjia',
+  },
+  {
     id: 3,
-    pid: 2,
-    path: '/operate',
-    name: 'Operation',
-    link: '/course/operate',
-    title: '操作管理',
-    icon: 'icon-setting',
+    pid: 1, // 0表示顶级菜单
+    path: '/course/del',
+    name: 'delCourse',
+    title: '删除课程',
+    icon: 'icon-delete',
   },
   {
     id: 4,
-    pid: 3,
-    path: '/info',
-    name: 'Info',
-    title: '课程信息',
-    link: '/course/operate/info',
-    icon: 'icon-a-xinxiyuyinxinxitishixinxi-04',
-  },
-  {
-    id: 5,
-    pid: 2,
-    path: '/class',
-    name: 'Class',
-    link: '/course/class',
-    title: '课程班级',
-    icon: 'icon-banjiguanli',
-  },
-  {
-    id: 6,
-    pid: 0, // 0表示顶级菜单
-    path: '/user',
-    name: 'User',
-    title: '学生管理',
-    icon: 'icon-banjiguanli',
-  },
-  {
-    id: 7,
-    pid: 6,
-    path: '/operate',
-    name: 'StudentOperation',
-    link: '/student/operate',
-    title: '学生操作',
+    pid: 1, // 0表示顶级菜单
+    path: '/course/operate',
+    name: 'Operation',
+    title: '课程操作',
     icon: 'icon-operation',
   },
   {
-    id: 8,
-    pid: 6,
-    path: '/add',
-    name: 'AddStudent',
-    link: '/student/add',
+    id: 5,
+    pid: 0, // 0表示顶级菜单
+    path: '/student',
+    name: 'Student',
+    title: '学生管理',
+    icon: 'icon-setting',
+  },
+  {
+    id: 6,
+    pid: 5, // 0表示顶级菜单
+    path: '/students/add',
+    name: 'addStudent',
     title: '添加学生',
     icon: 'icon-tianjia',
   },
   {
-    id: 9,
-    pid: 6,
-    path: '/delete',
-    name: 'DeleteStudent',
-    link: '/student/delete',
+    id: 7,
+    pid: 5, // 0表示顶级菜单
+    path: '/students/del',
+    name: 'delStudent',
     title: '删除学生',
     icon: 'icon-delete',
   },
   {
-    id: 10,
-    pid: 0,
+    id: 8,
+    pid: 5, // 0表示顶级菜单
+    path: '/students/operate',
+    name: 'Operation',
+    title: '学生操作',
+    icon: 'icon-operation',
+  },
+  {
+    id: 9,
+    pid: 0, // 0表示顶级菜单
     path: '/teacher',
     name: 'Teacher',
     title: '教师管理',
-    icon: 'icon-banjiguanli',
+    icon: 'icon-setting',
+  },
+  {
+    id: 10,
+    pid: 9, // 0表示顶级菜单
+    path: '/teacher/add',
+    name: 'addTeacher',
+    title: '添加教师',
+    icon: 'icon-tianjia',
   },
   {
     id: 11,
-    pid: 10,
-    path: '/operate',
-    name: 'TeacherOperation',
+    pid: 9, // 0表示顶级菜单
+    path: '/teacher/del',
+    name: 'delTeacher',
+    title: '删除教师',
+    icon: 'icon-delete',
+  },
+  {
+    id: 12,
+    pid: 9, // 0表示顶级菜单
+    path: '/teacher/operate',
+    name: 'Operation',
     title: '教师操作',
     icon: 'icon-operation',
   },
   {
-    id: 12,
-    pid: 11,
-    path: '/theacherinfo',
-    name: 'TeacherInfo',
-    title: '教师信息',
-    link: '/teacher/operate/info',
-    icon: 'icon-a-xinxiyuyinxinxitishixinxi-04',
+    id: 13,
+    pid: 0, // 0表示顶级菜单
+    path: '/class',
+    name: 'Class',
+    title: '班级管理',
+    icon: 'icon-banjiguanli',
   },
+  {
+    id: 14,
+    pid: 13, // 0表示顶级菜单
+    path: '/class/add',
+    name: 'addClass',
+    title: '添加班级',
+    icon: 'icon-tianjia',
+  },
+  {
+    id: 15,
+    pid: 13, // 0表示顶级菜单
+    path: '/class/del',
+    name: 'delClass',
+    title: '删除班级',
+    icon: 'icon-delete',
+  },
+  {
+    id: 16,
+    pid: 13, // 0表示顶级菜单
+    path: '/class/operate',
+    name: 'Operation',
+    title: '班级操作',
+    icon: 'icon-operation',
+  }
+  
 ]

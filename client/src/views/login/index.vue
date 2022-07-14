@@ -1,6 +1,6 @@
 <!--  -->
 <template>
-  <h2>教师操作</h2>
+  <div>Login</div>
 </template>
 
 <script setup></script>

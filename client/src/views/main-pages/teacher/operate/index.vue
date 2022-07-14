@@ -1,6 +1,6 @@
 <!--  -->
 <template>
-  <h2>教师信息</h2>
+  <div>教师操作</div>
 </template>
 
 <script setup></script>

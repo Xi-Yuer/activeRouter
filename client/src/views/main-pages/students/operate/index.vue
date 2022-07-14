@@ -1,6 +1,6 @@
 <!--  -->
 <template>
-  <h2>操作</h2>
+  <div>学生操作</div>
 </template>
 
 <script setup></script>

@@ -49,7 +49,7 @@ import { computed } from 'vue';
 const router = useRouter()
 const store = useStore()
 
-const width = computed(()=>props.isCollaps ? '100px' : '200px')
+const width = computed(()=>props.isCollaps ? '100px' : '199px')
 
 const currentUserRoute = store.userRoutes
 
@@ -99,5 +99,8 @@ i {
 }
 .el-menu--collapse{
   width: 100%;
+}
+.el-menu {
+  border: none;
 }
 </style>

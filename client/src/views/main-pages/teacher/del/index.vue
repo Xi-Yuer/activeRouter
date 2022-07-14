@@ -1,6 +1,6 @@
 <!--  -->
 <template>
-  <h2>删除学生</h2>
+  <div>删除教师</div>
 </template>
 
 <script setup></script>

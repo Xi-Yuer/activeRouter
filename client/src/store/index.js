@@ -18,9 +18,12 @@ const useStore = defineStore({
       const formatUserRoutesResult = formatRouterTree(userRoutes)
       this.userRoutes = formatUserRoutesResult
       // 注册路由
-      generateRouter(this.userRoutes).forEach(route => {
+      // console.log(generateRouter(this.userRoutes))
+      generateRouter(this.userRoutes).map(route => {
+        console.log(route)
         router.addRoute('Index', route)
       })
+      // console.log(router.getRoutes())
     },
   },
   persist: {

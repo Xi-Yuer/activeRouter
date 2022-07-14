@@ -1,6 +1,6 @@
 <!--  -->
 <template>
-  <div>课程管理</div>
+  <div>添加课程</div>
 </template>
 
 <script setup></script>
