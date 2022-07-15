@@ -25,13 +25,14 @@ const router = createRouter({
 })
 // 初始化路由数据
 let hasRoute = false
-router.beforeEach(async to => {
+router.beforeEach(async (to, from, next) => {
   if (!hasRoute) {
     await useStore().changeUserRoutes()
     hasRoute = true
-    return { ...to, replace: true }
+    next({ ...to, replace: true })
+  } else {
+    next()
   }
-  return true
 })
 
 export default router

@@ -50,7 +50,7 @@ function generateRouter(userRoutes) {
         title: r.title,
       },
       component:
-        r.pid === 0
+        r.children.length
           ? ''
           : () =>
               import(

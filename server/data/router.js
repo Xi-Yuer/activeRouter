@@ -16,11 +16,27 @@ module.exports = [
     icon: 'icon-tianjia',
   },
   {
+    id: 17,
+    pid: 2, // 0表示顶级菜单
+    path: '/course/add/math',
+    name: 'addCourseMath',
+    title: '添加数学',
+    icon: 'icon-tianjia',
+  },
+  {
     id: 3,
     pid: 1, // 0表示顶级菜单
     path: '/course/del',
     name: 'delCourse',
     title: '删除课程',
+    icon: 'icon-delete',
+  },
+  {
+    id: 18,
+    pid: 3, // 0表示顶级菜单
+    path: '/course/del/math',
+    name: 'delCourseMath',
+    title: '删除数学',
     icon: 'icon-delete',
   },
   {
@@ -126,6 +142,5 @@ module.exports = [
     name: 'Doperation',
     title: '班级操作',
     icon: 'icon-operation',
-  }
-  
+  },
 ]
